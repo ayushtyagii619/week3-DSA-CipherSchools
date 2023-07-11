@@ -70,3 +70,37 @@ int main(){
 	c.speak();
 		return 0;
 }
+
+
+//const. and dest.
+
+#include<iostream>
+using namespace std;
+//single
+class A{
+	public:
+		A(){
+			cout<<"A's const."<<endl;
+		}
+		~A(){
+	cout<<"A's dest. "<<endl;
+}
+};
+
+
+
+class B: public A{
+	public:
+		B(){
+			cout<<"B's const"<<endl;
+		}
+		~B(){
+			cout<<"B's dest"<<endl;
+		}
+};
+
+
+int main(){
+	B obj;
+		return 0;
+}
