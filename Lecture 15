@@ -35,3 +35,38 @@ class E: public C{};
 int main(){
 	return 0
 }
+
+//inheritance example
+
+#include<iostream>
+using namespace std;
+//single
+class Animal{
+	public:
+		void speak(){
+			cout<<"sounds: "<<endl;
+		}
+};
+class Dog: public Animal{
+	public:
+		void speak(){
+			cout<<"wooff bhavv grrrr"<<endl;
+		}
+};
+class Cat: public Animal{
+	public:
+		void speak(){
+			cout<<"meowwww"<<endl;
+		}
+};
+
+
+int main(){
+	Dog d;
+	Animal a;
+	Cat c;
+	a.speak();
+	d.speak();
+	c.speak();
+		return 0;
+}
